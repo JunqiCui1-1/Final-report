@@ -21,7 +21,7 @@ Each output contains unique rows with the two columns only.
 
 ---
 
-## Matching logic (high-recall, cardiac-specific)
+## Matching logic
 We use non-capturing regex patterns (no warnings) and allow common synonyms/variants:
 
 ```txt
