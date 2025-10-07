@@ -8,7 +8,7 @@
 
 - **MIMIC-style output:** two columns `SUBJECT_ID,HADM_ID`  
 - **eICU-style output:** one column `patientunitstayid`  
-- Supports **intersection / loose-intersection / union**, **multi-file inputs**, mixed **ICD lists** or **free-text DESCRIPTION** lists, robust column-name and encoding handling.
+- Supports **intersection **, **multi-file inputs**, mixed **ICD lists** or **free-text DESCRIPTION** lists, robust column-name and encoding handling.
 
 ---
 
