@@ -9,7 +9,7 @@ Unifies ICU unit names from **MIMIC-IV** and **eICU** into the **five MIMIC-III 
 
 ## Master Mapping Table
 
-| MIMIC-III (baseline) | MIMIC-IV careunit (examples/patterns) | eICU unittype (examples/patterns) |
+| MIMIC-III | MIMIC-IV careunit | eICU unittype |
 |---|---|---|
 | **CSRU** | Cardiac Vascular ICU (CVICU); Cardiac Surgery ICU; Cardiothoracic ICU (CTICU); CSRU | CCU-CTICU; CSICU; CTICU; Cardiac ICU *(see note)* |
 | **CCU**  | Coronary Care Unit (CCU); Cardiac ICU *(see note)* | Cardiac ICU *(see note)* |
