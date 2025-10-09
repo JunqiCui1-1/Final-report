@@ -1,0 +1,122 @@
+ICD9_CODE,LONG_TITLE
+2409,"Goiter, unspecified"
+2410,Nontoxic uninodular goiter
+2411,Nontoxic multinodular goiter
+2419,Unspecified nontoxic nodular goiter
+24220,Toxic multinodular goiter without mention of thyrotoxic crisis or storm
+24290,"Thyrotoxicosis without mention of goiter or other cause, and without mention of thyrotoxic crisis or storm"
+24291,"Thyrotoxicosis without mention of goiter or other cause, with mention of thyrotoxic crisis or storm"
+2440,Postsurgical hypothyroidism
+2441,Other postablative hypothyroidism
+2443,Other iatrogenic hypothyroidism
+2448,Other specified acquired hypothyroidism
+2449,Unspecified acquired hypothyroidism
+2452,Chronic lymphocytic thyroiditis
+2468,Other specified disorders of thyroid
+2469,Unspecified disorder of thyroid
+25000,"Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+25001,"Diabetes mellitus without mention of complication, type I [juvenile type], not stated as uncontrolled"
+25002,"Diabetes mellitus without mention of complication, type II or unspecified type, uncontrolled"
+25003,"Diabetes mellitus without mention of complication, type I [juvenile type], uncontrolled"
+25011,"Diabetes with ketoacidosis, type I [juvenile type], not stated as uncontrolled"
+25012,"Diabetes with ketoacidosis, type II or unspecified type, uncontrolled"
+25013,"Diabetes with ketoacidosis, type I [juvenile type], uncontrolled"
+25020,"Diabetes with hyperosmolarity, type II or unspecified type, not stated as uncontrolled"
+25021,"Diabetes with hyperosmolarity, type I [juvenile type], not stated as uncontrolled"
+25030,"Diabetes with other coma, type II or unspecified type, not stated as uncontrolled"
+25040,"Diabetes with renal manifestations, type II or unspecified type, not stated as uncontrolled"
+25041,"Diabetes with renal manifestations, type I [juvenile type], not stated as uncontrolled"
+25042,"Diabetes with renal manifestations, type II or unspecified type, uncontrolled"
+25043,"Diabetes with renal manifestations, type I [juvenile type], uncontrolled"
+25050,"Diabetes with ophthalmic manifestations, type II or unspecified type, not stated as uncontrolled"
+25051,"Diabetes with ophthalmic manifestations, type I [juvenile type], not stated as uncontrolled"
+25052,"Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled"
+25053,"Diabetes with ophthalmic manifestations, type I [juvenile type], uncontrolled"
+25060,"Diabetes with neurological manifestations, type II or unspecified type, not stated as uncontrolled"
+25061,"Diabetes with neurological manifestations, type I [juvenile type], not stated as uncontrolled"
+25062,"Diabetes with neurological manifestations, type II or unspecified type, uncontrolled"
+25063,"Diabetes with neurological manifestations, type I [juvenile type], uncontrolled"
+25070,"Diabetes with peripheral circulatory disorders, type II or unspecified type, not stated as uncontrolled"
+25071,"Diabetes with peripheral circulatory disorders, type I [juvenile type], not stated as uncontrolled"
+25072,"Diabetes with peripheral circulatory disorders, type II or unspecified type, uncontrolled"
+25073,"Diabetes with peripheral circulatory disorders, type I [juvenile type], uncontrolled"
+25080,"Diabetes with other specified manifestations, type II or unspecified type, not stated as uncontrolled"
+25081,"Diabetes with other specified manifestations, type I [juvenile type], not stated as uncontrolled"
+25082,"Diabetes with other specified manifestations, type II or unspecified type, uncontrolled"
+25083,"Diabetes with other specified manifestations, type I [juvenile type], uncontrolled"
+25091,"Diabetes with unspecified complication, type I [juvenile type], not stated as uncontrolled"
+25092,"Diabetes with unspecified complication, type II or unspecified type, uncontrolled"
+25093,"Diabetes with unspecified complication, type I [juvenile type], uncontrolled"
+25200,"Hyperparathyroidism, unspecified"
+25201,Primary hyperparathyroidism
+25208,Other hyperparathyroidism
+2521,Hypoparathyroidism
+2531,Other and unspecified anterior pituitary hyperfunction
+2532,Panhypopituitarism
+2535,Diabetes insipidus
+2536,Other disorders of neurohypophysis
+2538,Other disorders of the pituitary and other syndromes of diencephalohypophyseal origin
+2550,Cushing's syndrome
+25541,Glucocorticoid deficiency
+2555,Other adrenal hypofunction
+2559,Unspecified disorder of adrenal glands
+25639,Other ovarian failure
+28521,Anemia in chronic kidney disease
+3572,Polyneuropathy in diabetes
+36201,Background diabetic retinopathy
+36202,Proliferative diabetic retinopathy
+36203,Nonproliferative diabetic retinopathy NOS
+36207,Diabetic macular edema
+36641,Diabetic cataract
+4010,Malignant essential hypertension
+4011,Benign essential hypertension
+4019,Unspecified essential hypertension
+40290,Unspecified hypertensive heart disease without heart failure
+40291,Unspecified hypertensive heart disease with heart failure
+40300,"Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage I through stage IV, or unspecified"
+40301,"Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage V or end stage renal disease"
+40310,"Hypertensive chronic kidney disease, benign, with chronic kidney disease stage I through stage IV, or unspecified"
+40311,"Hypertensive chronic kidney disease, benign, with chronic kidney disease stage V or end stage renal disease"
+40390,"Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage I through stage IV, or unspecified"
+40391,"Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage V or end stage renal disease"
+40401,"Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+40403,"Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage V or end stage renal disease"
+40411,"Hypertensive heart and chronic kidney disease, benign, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+40491,"Hypertensive heart and chronic kidney disease, unspecified, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+40493,"Hypertensive heart and chronic kidney disease, unspecified, with heart failure and chronic kidney disease stage V or end stage renal disease"
+40591,Unspecified renovascular hypertension
+4160,Primary pulmonary hypertension
+45821,Hypotension of hemodialysis
+49120,Obstructive chronic bronchitis without exacerbation
+49121,Obstructive chronic bronchitis with (acute) exacerbation
+49122,Obstructive chronic bronchitis with acute bronchitis
+4919,Unspecified chronic bronchitis
+4920,Emphysematous bleb
+4928,Other emphysema
+49300,"Extrinsic asthma, unspecified"
+49320,"Chronic obstructive asthma, unspecified"
+49322,Chronic obstructive asthma with (acute) exacerbation
+49381,Exercise induced bronchospasm
+49390,"Asthma, unspecified type, unspecified"
+49392,"Asthma, unspecified type, with (acute) exacerbation"
+4940,Bronchiectasis without acute exacerbation
+496,"Chronic airway obstruction, not elsewhere classified"
+515,Postinflammatory pulmonary fibrosis
+51631,Idiopathic pulmonary fibrosis
+5181,Interstitial emphysema
+5723,Portal hypertension
+5851,"Chronic kidney disease, Stage I"
+5852,"Chronic kidney disease, Stage II (mild)"
+5853,"Chronic kidney disease, Stage III (moderate)"
+5854,"Chronic kidney disease, Stage IV (severe)"
+5855,"Chronic kidney disease, Stage V"
+5856,End stage renal disease
+5859,"Chronic kidney disease, unspecified"
+7962,Elevated blood pressure reading without diagnosis of hypertension
+9587,Traumatic subcutaneous emphysema
+99668,Infection and inflammatory reaction due to peritoneal dialysis catheter
+99791,"Complications affecting other specified body systems, not elsewhere classified, hypertension"
+99881,Emphysema (subcutaneous) (surgical) resulting from procedure
+V180,Family history of diabetes mellitus
+V4511,Renal dialysis status
+V568,Encounter for other dialysis

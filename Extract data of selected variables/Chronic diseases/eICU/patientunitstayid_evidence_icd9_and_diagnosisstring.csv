@@ -1,0 +1,64 @@
+diagnosisstring
+cardiovascular|ventricular disorders|hypertension
+endocrine|glucose metabolism|diabetes mellitus|Type II
+endocrine|glucose metabolism|diabetes mellitus|Type I
+cardiovascular|vascular disorders|hypertension
+endocrine|glucose metabolism|hyperglycemia|stress related
+endocrine|glucose metabolism|diabetes mellitus
+endocrine|thyroid|hypothyroidism
+pulmonary|disorders of the airways|COPD
+pulmonary|disorders of vasculature|pulmonary hypertension
+cardiovascular|vascular disorders|hypertension|controlled
+pulmonary|disorders of the airways|COPD|moderate
+cardiovascular|vascular disorders|hypertension|uncontrolled
+pulmonary|disorders of the airways|asthma / bronchospasm
+endocrine|glucose metabolism|diabetes mellitus|Type II|uncontrolled
+pulmonary|disorders of lung parenchyma|interstitial lung disease|idiopathic pulmonary fibrosis
+endocrine|glucose metabolism|hyperglycemia
+renal|disorder of kidney|chronic kidney disease
+pulmonary|disorders of the airways|COPD|severe
+cardiovascular|ventricular disorders|hypertension|hypertensive emergency/urgency
+endocrine|glucose metabolism|DKA
+renal|disorder of kidney|chronic kidney disease|Stage 5 (GFR <14)
+"infectious diseases|skin, bone and joint infections|diabetic foot infection|with gangrene"
+renal|disorder of kidney|chronic kidney disease|Stage 3 (GFR 30-59)
+renal|disorder of kidney|chronic kidney disease|Stage 2 (GFR 60-89)
+renal|disorder of kidney|ESRD (end stage renal disease)
+renal|disorder of kidney|chronic kidney disease|Stage 4 (GFR 15-29)
+pulmonary|disorders of lung parenchyma|interstitial lung disease|ILD associated with collagen vascular disease
+pulmonary|disorders of the airways|acute COPD exacerbation|with baseline hypoxemia
+endocrine|glucose metabolism|diabetes mellitus|Type II|controlled
+cardiovascular|ventricular disorders|hypertension|with heart failure and renal failure
+cardiovascular|ventricular disorders|hypertension|controlled
+cardiovascular|vascular disorders|hypertension|hypertensive emergency/urgency
+pulmonary|disorders of lung parenchyma|interstitial lung disease
+cardiovascular|ventricular disorders|hypertension|uncontrolled
+pulmonary|disorders of the airways|COPD|no limitations
+endocrine|glucose metabolism|diabetes mellitus|Type I|controlled
+pulmonary|disorders of the airways|asthma / bronchospasm|moderate
+pulmonary|disorders of the airways|acute COPD exacerbation
+pulmonary|disorders of lung parenchyma|interstitial lung disease|sarcoidosis
+endocrine|adrenal disorders|adrenal insufficiency|due to chronic steroid administration
+endocrine|adrenal disorders|adrenal insufficiency|unexpected hypotension / pressor requirement
+endocrine|pituitary and temperature regulation|hypopituitarism
+endocrine|adrenal disorders|adrenal insufficiency
+cardiovascular|vascular disorders|hypertension|with heart failure
+cardiovascular|vascular disorders|hypertension|malignant
+renal|disorder of kidney|chronic kidney disease|Stage 1 (GFR >90)
+pulmonary|pulmonary infections|bronchiectasis
+cardiovascular|ventricular disorders|hypertension|with renal failure
+cardiovascular|ventricular disorders|hypertension|with heart failure
+endocrine|pituitary and temperature regulation|hypothermia|due to cold environment
+neurologic|neuromuscular disorders|neuropathy|from diabetes
+endocrine|glucose metabolism|hyperglycemia|suspected
+endocrine|thyroid|hypothyroidism|primary
+cardiovascular|ventricular disorders|acute pulmonary edema|due to hypertension
+endocrine|thyroid|hyperthyroidism|Grave's disease
+endocrine|pituitary and temperature regulation|hypothermia|not due to cold environment
+endocrine|thyroid|hyperthyroidism
+pulmonary|disorders of vasculature|pulmonary hypertension|secondary
+pulmonary|disorders of the airways|asthma / bronchospasm|mild
+endocrine|glucose metabolism|hyperglycemia|corticosteroid related
+endocrine|pituitary and temperature regulation|pituitary hypothyroidism
+endocrine|pituitary and temperature regulation|pituitary adrenal insufficiency
+endocrine|pituitary and temperature regulation|pituitary Cushing syndrome

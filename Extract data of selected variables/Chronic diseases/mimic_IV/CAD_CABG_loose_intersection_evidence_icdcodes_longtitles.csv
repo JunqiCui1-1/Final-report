@@ -1,0 +1,260 @@
+icd_code,long_title
+2273,Benign neoplasm of pituitary gland and craniopharyngeal duct
+2409,"Goiter, unspecified"
+2410,Nontoxic uninodular goiter
+2411,Nontoxic multinodular goiter
+24200,Toxic diffuse goiter without mention of thyrotoxic crisis or storm
+24210,Toxic uninodular goiter without mention of thyrotoxic crisis or storm
+24220,Toxic multinodular goiter without mention of thyrotoxic crisis or storm
+2440,Postsurgical hypothyroidism
+2441,Other postablative hypothyroidism
+2443,Other iatrogenic hypothyroidism
+2448,Other specified acquired hypothyroidism
+2449,Unspecified acquired hypothyroidism
+2452,Chronic lymphocytic thyroiditis
+2469,Unspecified disorder of thyroid
+25000,"Diabetes mellitus without mention of complication, type II or unspecified type, not stated as uncontrolled"
+25001,"Diabetes mellitus without mention of complication, type I [juvenile type], not stated as uncontrolled"
+25002,"Diabetes mellitus without mention of complication, type II or unspecified type, uncontrolled"
+25003,"Diabetes mellitus without mention of complication, type I [juvenile type], uncontrolled"
+25011,"Diabetes with ketoacidosis, type I [juvenile type], not stated as uncontrolled"
+25012,"Diabetes with ketoacidosis, type II or unspecified type, uncontrolled"
+25013,"Diabetes with ketoacidosis, type I [juvenile type], uncontrolled"
+25022,"Diabetes with hyperosmolarity, type II or unspecified type, uncontrolled"
+25040,"Diabetes with renal manifestations, type II or unspecified type, not stated as uncontrolled"
+25041,"Diabetes with renal manifestations, type I [juvenile type], not stated as uncontrolled"
+25042,"Diabetes with renal manifestations, type II or unspecified type, uncontrolled"
+25043,"Diabetes with renal manifestations, type I [juvenile type], uncontrolled"
+25050,"Diabetes with ophthalmic manifestations, type II or unspecified type, not stated as uncontrolled"
+25051,"Diabetes with ophthalmic manifestations, type I [juvenile type], not stated as uncontrolled"
+25052,"Diabetes with ophthalmic manifestations, type II or unspecified type, uncontrolled"
+25053,"Diabetes with ophthalmic manifestations, type I [juvenile type], uncontrolled"
+25060,"Diabetes with neurological manifestations, type II or unspecified type, not stated as uncontrolled"
+25061,"Diabetes with neurological manifestations, type I [juvenile type], not stated as uncontrolled"
+25062,"Diabetes with neurological manifestations, type II or unspecified type, uncontrolled"
+25063,"Diabetes with neurological manifestations, type I [juvenile type], uncontrolled"
+25070,"Diabetes with peripheral circulatory disorders, type II or unspecified type, not stated as uncontrolled"
+25071,"Diabetes with peripheral circulatory disorders, type I [juvenile type], not stated as uncontrolled"
+25072,"Diabetes with peripheral circulatory disorders, type II or unspecified type, uncontrolled"
+25073,"Diabetes with peripheral circulatory disorders, type I [juvenile type], uncontrolled"
+25080,"Diabetes with other specified manifestations, type II or unspecified type, not stated as uncontrolled"
+25081,"Diabetes with other specified manifestations, type I [juvenile type], not stated as uncontrolled"
+25082,"Diabetes with other specified manifestations, type II or unspecified type, uncontrolled"
+25083,"Diabetes with other specified manifestations, type I [juvenile type], uncontrolled"
+25092,"Diabetes with unspecified complication, type II or unspecified type, uncontrolled"
+25093,"Diabetes with unspecified complication, type I [juvenile type], uncontrolled"
+2521,Hypoparathyroidism
+2531,Other and unspecified anterior pituitary hyperfunction
+2532,Panhypopituitarism
+2533,Pituitary dwarfism
+2535,Diabetes insipidus
+2536,Other disorders of neurohypophysis
+2537,Iatrogenic pituitary disorders
+2538,Other disorders of the pituitary and other syndromes of diencephalohypophyseal origin
+2550,Cushing's syndrome
+25510,"Hyperaldosteronism, unspecified"
+25541,Glucocorticoid deficiency
+2555,Other adrenal hypofunction
+2559,Unspecified disorder of adrenal glands
+28521,Anemia in chronic kidney disease
+3572,Polyneuropathy in diabetes
+36201,Background diabetic retinopathy
+36202,Proliferative diabetic retinopathy
+36203,Nonproliferative diabetic retinopathy NOS
+36207,Diabetic macular edema
+36641,Diabetic cataract
+4010,Malignant essential hypertension
+4011,Benign essential hypertension
+4019,Unspecified essential hypertension
+40290,Unspecified hypertensive heart disease without heart failure
+40291,Unspecified hypertensive heart disease with heart failure
+40300,"Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage I through stage IV, or unspecified"
+40301,"Hypertensive chronic kidney disease, malignant, with chronic kidney disease stage V or end stage renal disease"
+40310,"Hypertensive chronic kidney disease, benign, with chronic kidney disease stage I through stage IV, or unspecified"
+40311,"Hypertensive chronic kidney disease, benign, with chronic kidney disease stage V or end stage renal disease"
+40390,"Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage I through stage IV, or unspecified"
+40391,"Hypertensive chronic kidney disease, unspecified, with chronic kidney disease stage V or end stage renal disease"
+40401,"Hypertensive heart and chronic kidney disease, malignant, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+40491,"Hypertensive heart and chronic kidney disease, unspecified, with heart failure and with chronic kidney disease stage I through stage IV, or unspecified"
+40493,"Hypertensive heart and chronic kidney disease, unspecified, with heart failure and chronic kidney disease stage V or end stage renal disease"
+40591,Unspecified renovascular hypertension
+4160,Primary pulmonary hypertension
+45821,Hypotension of hemodialysis
+49120,Obstructive chronic bronchitis without exacerbation
+49121,Obstructive chronic bronchitis with (acute) exacerbation
+4920,Emphysematous bleb
+4928,Other emphysema
+49300,"Extrinsic asthma, unspecified"
+49320,"Chronic obstructive asthma, unspecified"
+49390,"Asthma, unspecified type, unspecified"
+49392,"Asthma, unspecified type, with (acute) exacerbation"
+4940,Bronchiectasis without acute exacerbation
+496,"Chronic airway obstruction, not elsewhere classified"
+515,Postinflammatory pulmonary fibrosis
+5181,Interstitial emphysema
+5723,Portal hypertension
+5851,"Chronic kidney disease, Stage I"
+5852,"Chronic kidney disease, Stage II (mild)"
+5853,"Chronic kidney disease, Stage III (moderate)"
+5854,"Chronic kidney disease, Stage IV (severe)"
+5855,"Chronic kidney disease, Stage V"
+5856,End stage renal disease
+5859,"Chronic kidney disease, unspecified"
+7962,Elevated blood pressure reading without diagnosis of hypertension
+99673,"Other complications due to renal dialysis device, implant, and graft"
+99881,Emphysema (subcutaneous) (surgical) resulting from procedure
+D352,Benign neoplasm of pituitary gland
+D631,Anemia in chronic kidney disease
+E010,Iodine-deficiency related diffuse (endemic) goiter
+E031,Congenital hypothyroidism without goiter
+E032,Hypothyroidism due to medicaments and other exogenous substances
+E038,Other specified hypothyroidism
+E039,"Hypothyroidism, unspecified"
+E042,Nontoxic multinodular goiter
+E049,"Nontoxic goiter, unspecified"
+E0500,Thyrotoxicosis with diffuse goiter without thyrotoxic crisis or storm
+E0590,"Thyrotoxicosis, unspecified without thyrotoxic crisis or storm"
+E063,Autoimmune thyroiditis
+E0965,Drug or chemical induced diabetes mellitus with hyperglycemia
+E099,Drug or chemical induced diabetes mellitus without complications
+E1010,Type 1 diabetes mellitus with ketoacidosis without coma
+E1021,Type 1 diabetes mellitus with diabetic nephropathy
+E1022,Type 1 diabetes mellitus with diabetic chronic kidney disease
+E10319,Type 1 diabetes mellitus with unspecified diabetic retinopathy without macular edema
+E103293,"Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral"
+E103299,"Type 1 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, unspecified eye"
+E103513,"Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema, bilateral"
+E103519,"Type 1 diabetes mellitus with proliferative diabetic retinopathy with macular edema, unspecified eye"
+E103593,"Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral"
+E103599,"Type 1 diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye"
+E1036,Type 1 diabetes mellitus with diabetic cataract
+E1040,"Type 1 diabetes mellitus with diabetic neuropathy, unspecified"
+E1042,Type 1 diabetes mellitus with diabetic polyneuropathy
+E1043,Type 1 diabetes mellitus with diabetic autonomic (poly)neuropathy
+E1049,Type 1 diabetes mellitus with other diabetic neurological complication
+E1051,Type 1 diabetes mellitus with diabetic peripheral angiopathy without gangrene
+E1052,Type 1 diabetes mellitus with diabetic peripheral angiopathy with gangrene
+E10610,Type 1 diabetes mellitus with diabetic neuropathic arthropathy
+E10621,Type 1 diabetes mellitus with foot ulcer
+E10649,Type 1 diabetes mellitus with hypoglycemia without coma
+E1065,Type 1 diabetes mellitus with hyperglycemia
+E1069,Type 1 diabetes mellitus with other specified complication
+E108,Type 1 diabetes mellitus with unspecified complications
+E109,Type 1 diabetes mellitus without complications
+E1100,Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+E1110,Type 2 diabetes mellitus with ketoacidosis without coma
+E1121,Type 2 diabetes mellitus with diabetic nephropathy
+E1122,Type 2 diabetes mellitus with diabetic chronic kidney disease
+E11311,Type 2 diabetes mellitus with unspecified diabetic retinopathy with macular edema
+E11319,Type 2 diabetes mellitus with unspecified diabetic retinopathy without macular edema
+E113219,"Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy with macular edema, unspecified eye"
+E11329,Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema
+E113291,"Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, right eye"
+E113293,"Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy without macular edema, bilateral"
+E113399,"Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy without macular edema, unspecified eye"
+E113521,"Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula, right eye"
+E11359,Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema
+E113593,"Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, bilateral"
+E113599,"Type 2 diabetes mellitus with proliferative diabetic retinopathy without macular edema, unspecified eye"
+E1136,Type 2 diabetes mellitus with diabetic cataract
+E1139,Type 2 diabetes mellitus with other diabetic ophthalmic complication
+E1140,"Type 2 diabetes mellitus with diabetic neuropathy, unspecified"
+E1142,Type 2 diabetes mellitus with diabetic polyneuropathy
+E1143,Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy
+E1151,Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene
+E1152,Type 2 diabetes mellitus with diabetic peripheral angiopathy with gangrene
+E1159,Type 2 diabetes mellitus with other circulatory complications
+E11610,Type 2 diabetes mellitus with diabetic neuropathic arthropathy
+E11621,Type 2 diabetes mellitus with foot ulcer
+E11622,Type 2 diabetes mellitus with other skin ulcer
+E11628,Type 2 diabetes mellitus with other skin complications
+E11649,Type 2 diabetes mellitus with hypoglycemia without coma
+E1165,Type 2 diabetes mellitus with hyperglycemia
+E1169,Type 2 diabetes mellitus with other specified complication
+E118,Type 2 diabetes mellitus with unspecified complications
+E119,Type 2 diabetes mellitus without complications
+E1300,Other specified diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)
+E1310,Other specified diabetes mellitus with ketoacidosis without coma
+E1365,Other specified diabetes mellitus with hyperglycemia
+E139,Other specified diabetes mellitus without complications
+E209,"Hypoparathyroidism, unspecified"
+E210,Primary hyperparathyroidism
+E211,"Secondary hyperparathyroidism, not elsewhere classified"
+E212,Other hyperparathyroidism
+E213,"Hyperparathyroidism, unspecified"
+E222,Syndrome of inappropriate secretion of antidiuretic hormone
+E237,"Disorder of pituitary gland, unspecified"
+E273,Drug-induced adrenocortical insufficiency
+E2740,Unspecified adrenocortical insufficiency
+E2749,Other adrenocortical insufficiency
+E278,Other specified disorders of adrenal gland
+E8791,"Kidney dialysis as the cause of abnormal reaction of patient, or of later complication, without mention of misadventure at time of procedure"
+E890,Postprocedural hypothyroidism
+E891,Postprocedural hypoinsulinemia
+E892,Postprocedural hypoparathyroidism
+H40059,"Ocular hypertension, unspecified eye"
+I10,Essential (primary) hypertension
+I110,Hypertensive heart disease with heart failure
+I119,Hypertensive heart disease without heart failure
+I120,Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease
+I129,"Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+I130,"Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+I1310,"Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
+I1311,"Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"
+I132,"Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"
+I159,"Secondary hypertension, unspecified"
+I272,Other secondary pulmonary hypertension
+I2720,"Pulmonary hypertension, unspecified"
+I2721,Secondary pulmonary arterial hypertension
+I2722,Pulmonary hypertension due to left heart disease
+I2723,Pulmonary hypertension due to lung diseases and hypoxia
+I2729,Other secondary pulmonary hypertension
+I953,Hypotension of hemodialysis
+I973,Postprocedural hypertension
+J42,Unspecified chronic bronchitis
+J430,Unilateral pulmonary emphysema [MacLeod's syndrome]
+J432,Centrilobular emphysema
+J439,"Emphysema, unspecified"
+J440,Chronic obstructive pulmonary disease with (acute) lower respiratory infection
+J441,Chronic obstructive pulmonary disease with (acute) exacerbation
+J449,"Chronic obstructive pulmonary disease, unspecified"
+J4520,"Mild intermittent asthma, uncomplicated"
+J4530,"Mild persistent asthma, uncomplicated"
+J4540,"Moderate persistent asthma, uncomplicated"
+J45901,Unspecified asthma with (acute) exacerbation
+J45909,"Unspecified asthma, uncomplicated"
+J45990,Exercise induced bronchospasm
+J45998,Other asthma
+J479,"Bronchiectasis, uncomplicated"
+J8410,"Pulmonary fibrosis, unspecified"
+J84112,Idiopathic pulmonary fibrosis
+J8417,Other interstitial pulmonary diseases with fibrosis in diseases classified elsewhere
+J849,"Interstitial pulmonary disease, unspecified"
+J982,Interstitial emphysema
+K766,Portal hypertension
+N181,"Chronic kidney disease, stage 1"
+N182,"Chronic kidney disease, stage 2 (mild)"
+N183,"Chronic kidney disease, stage 3 (moderate)"
+N1830,"Chronic kidney disease, stage 3 unspecified"
+N1831,"Chronic kidney disease, stage 3a"
+N1832,"Chronic kidney disease, stage 3b"
+N184,"Chronic kidney disease, stage 4 (severe)"
+N185,"Chronic kidney disease, stage 5"
+N186,End stage renal disease
+N189,"Chronic kidney disease, unspecified"
+R030,"Elevated blood-pressure reading, without diagnosis of hypertension"
+R739,"Hyperglycemia, unspecified"
+T8182XA,"Emphysema (subcutaneous) resulting from a procedure, initial encounter"
+T8182XD,"Emphysema (subcutaneous) resulting from a procedure, subsequent encounter"
+T8242XA,"Displacement of vascular dialysis catheter, initial encounter"
+T85621A,"Displacement of intraperitoneal dialysis catheter, initial encounter"
+T85691A,"Other mechanical complication of intraperitoneal dialysis catheter, initial encounter"
+V180,Family history of diabetes mellitus
+V4511,Renal dialysis status
+V4512,Noncompliance with renal dialysis
+V560,Encounter for extracorporeal dialysis
+V562,Fitting and adjustment of peritoneal dialysis catheter
+V568,Encounter for other dialysis
+Z833,Family history of diabetes mellitus
+Z9115,Patient's noncompliance with renal dialysis
+Z992,Dependence on renal dialysis
