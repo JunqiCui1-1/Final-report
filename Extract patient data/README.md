@@ -11,7 +11,7 @@ Given a baseline file, this script:
 - Finds the `id` column (case-insensitive).
 - Loads its unique IDs.
 - Streams through target CSV/CSV.GZ files **in chunks** (memory-friendly).
-- Writes **header + matched rows** to `/content/filtered_by_patientunitstayid`.
+- Writes **header + matched rows**.
 
 ---
 
