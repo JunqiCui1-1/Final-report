@@ -26,7 +26,7 @@ import pandas as pd
 
 # ========= Paths =========
 BASE_PATH = "/content/patientunitstayid_intersection.csv"
-DIAG_PATH = "/content/filtered_by_patientunitstayid/diagnosis.csv"
+DIAG_PATH = "/content/diagnosis.csv"
 OUT_PATH  = "/content/patientunitstayid_comorbidities.csv"
 
 # ========= Load data =========
