@@ -1,13 +1,13 @@
-# Filter CSVs by `patientunitstayid`
+# Filter CSVs by `id`
 
-A small utility to **filter very large CSV/CSV.GZ files** by a baseline list of `patientunitstayid` values.  
+A small utility to **filter very large CSV/CSV.GZ files** by a baseline list of `id` values.  
 It **keeps the header row** and **writes only the matching rows** to a separate output folder.
 
 ---
 
 ## Purpose
 
-Given a baseline file `/content/patientunitstayid_intersection.csv`, this script:
+Given a baseline file, this script:
 - Finds the `patientunitstayid` column (case-insensitive).
 - Loads its unique IDs.
 - Streams through target CSV/CSV.GZ files **in chunks** (memory-friendly).
