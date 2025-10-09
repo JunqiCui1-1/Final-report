@@ -8,7 +8,7 @@ It **keeps the header row** and **writes only the matching rows** to a separate 
 ## Purpose
 
 Given a baseline file, this script:
-- Finds the `patientunitstayid` column (case-insensitive).
+- Finds the `id` column (case-insensitive).
 - Loads its unique IDs.
 - Streams through target CSV/CSV.GZ files **in chunks** (memory-friendly).
 - Writes **header + matched rows** to `/content/filtered_by_patientunitstayid`.
