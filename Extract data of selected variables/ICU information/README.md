@@ -1,10 +1,9 @@
-# ICU Unit Mapping (MIMIC-III Baseline)
+# ICU Unit Mapping
 
 Unifies ICU unit names from **MIMIC-IV** and **eICU** into the **five MIMIC-III baseline classes**:
 
 `CSRU`, `CCU`, `MICU`, `SICU`, `TSICU`.
 
-Non-ICU or ambiguous labels are preserved as **NA** (not dropped) for auditability.
 
 ---
 
@@ -19,8 +18,6 @@ Non-ICU or ambiguous labels are preserved as **NA** (not dropped) for auditabili
 | **TSICU**| Trauma SICU (TSICU); Trauma ICU | TSICU; Trauma ICU; Trauma SICU |
 
 > **Note – “Cardiac ICU”**: By default we map **Cardiac ICU → CCU** (medical cardiac).  
-> If your project defines Cardiac ICU as **post-op cardiac surgery**, switch it to **CSRU** consistently across all datasets.
-
 ---
 
 ## Mapping Rules & Priority (for code)
