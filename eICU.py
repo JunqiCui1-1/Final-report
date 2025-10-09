@@ -18,7 +18,7 @@ Notes
 - Text matching is keyword/regex-based (case-insensitive) over concatenated diagnosis text columns.
 - Code matching is prefix-based over any columns that look like ICD/code columns.
 - CKD logic excludes "pure AKI" unless there is an "acute on chronic" indication.
-- Chronic endocrine disease excludes diabetes (which is handled separately).
+- Chronic endocrine disease excludes diabetes.
 """
 
 import re
@@ -78,23 +78,23 @@ for c in code_cols:
 diag["_all_text_"] = diag.apply(lambda r: combine_text(r, text_cols).lower(), axis=1)
 
 # ========= Regex vocab & ICD prefixes =========
-# Diabetes: ICD-10 E10–E14; ICD-9 250; keywords DM/diabetes/diabetic/DKA/高血糖 etc.
-RE_DIABETES = re.compile(r"\b(diabetes|diabetic|dm|dka|hyperglyc[a|e]mia)\b|糖尿病", re.IGNORECASE)
+# Diabetes: ICD-10 E10–E14; ICD-9 250; keywords DM/diabetes/diabetic/DKA etc.
+RE_DIABETES = re.compile(r"\b(diabetes|diabetic|dm|dka|hyperglyc[a|e]mia)", re.IGNORECASE)
 ICD10_DIAB = ("E10", "E11", "E12", "E13", "E14")
 ICD9_DIAB  = ("250",)
 
-# Hypertension: ICD-10 I10–I15; ICD-9 401–405; keywords HTN/hypertension/高血压
-RE_HTN = re.compile(r"\b(htn|hypertension|high\s*blood\s*pressure)\b|高血压", re.IGNORECASE)
+# Hypertension: ICD-10 I10–I15; ICD-9 401–405; keywords HTN/hypertension
+RE_HTN = re.compile(r"\b(htn|hypertension|high\s*blood\s*pressure)", re.IGNORECASE)
 ICD10_HTN = ("I10", "I11", "I12", "I13", "I15")
 ICD9_HTN  = ("401", "402", "403", "404", "405")
 
-# CKD: ICD-10 N18, Z99.2; ICD-9 585, V45.11/V56.*; keywords CKD/ESRD/长期透析/慢性肾病;
+# CKD: ICD-10 N18, Z99.2; ICD-9 585, V45.11/V56.*; keywords CKD/ESRD;
 # avoid pure AKI unless "acute on chronic".
 RE_CKD_CORE = re.compile(
-    r"(chronic\s+kidney\s+disease|ckd|end[- ]stage\s+renal\s+disease|esrd|chronic\s+renal\s+failure|长期透析|维持性透析|透析|慢性肾脏?病|慢性肾功能不全)",
+    r"(chronic\s+kidney\s+disease|ckd|end[- ]stage\s+renal\s+disease|esrd|chronic\s+renal\s+failure)",
     re.IGNORECASE
 )
-RE_AKI_ONLY = re.compile(r"\b(aki|acute\s+(kidney|renal)\s+(injury|failure))\b|急性肾(损伤|衰竭)", re.IGNORECASE)
+RE_AKI_ONLY = re.compile(r"\b(aki|acute\s+(kidney|renal)\s+(injury|failure)))", re.IGNORECASE)
 RE_CHRONIC_WORD = re.compile(r"\bchronic\b|慢性", re.IGNORECASE)
 
 ICD10_CKD = ("N18", "Z99.2")
@@ -103,7 +103,6 @@ ICD9_CKD  = ("585", "V45.11", "V56")
 # Chronic lung disease: COPD/emphysema/chronic bronchitis/bronchiectasis/ILD/fibrosis/asthma
 RE_CLD = re.compile(
     r"(copd|emphysema|chronic\s*bronchitis|bronchiectasis|interstitial\s+lung\s+disease|pulmonary\s+fibrosis|asthma|"
-    r"慢阻肺|肺气肿|慢性支气管炎|支气管扩张|间质性肺病|肺纤维化|哮喘)",
     re.IGNORECASE
 )
 ICD10_CLD = ("J44", "J43", "J41", "J42", "J47", "J84", "J45")
@@ -113,7 +112,6 @@ ICD9_CLD  = ("491", "492", "493", "494", "496")
 RE_ENDO = re.compile(
     r"(hypothyroid|hyperthyroid|thyroiditis|goitre|goiter|cushing|addison|adrenal\s+insufficiency|hyperparathyroid|"
     r"hypoparathyroid|pituitary|acromegaly|pheochromocytoma|pcos|polycystic\s+ovary|"
-    r"甲减|甲亢|甲状腺炎|甲状腺功能(减退|亢进)|库欣|艾迪生|肾上腺(功能)?(不全|亢进)|垂体(瘤|功能减退)|多囊卵巢)",
     re.IGNORECASE
 )
 ICD10_ENDO = ("E03", "E05", "E20", "E21", "E22", "E23", "E24", "E27", "E28", "E34", "E89")  # excludes E10–E14 (diabetes)
