@@ -14,7 +14,7 @@ Standardize extraction and cleaning of four core labs (Creatinine, Sodium, Potas
 
 > Albumin is also extracted from these sources:
 > - MIMIC: `LABEVENTS` with `itemid = 50862`
-> - eICU: `labname` contains “albumin” (or “白蛋白”)
+> - eICU: `labname` contains “albumin” 
 
 ---
 
@@ -38,7 +38,7 @@ Values outside these ranges are set to NA. Additionally, **≤ 0** is set to NA 
 | Sodium      | **110 – 170 mmol/L** | —                      |
 | Potassium   | **1.5 – 8.0 mmol/L** | ✅                     |
 | Hemoglobin  | **3 – 22 g/dL**      | ✅                     |
-| Albumin     | **2 – 5 g/dL**       | — (typically not needed)|
+| Albumin     | **2 – 5 g/dL**       | —                       |
 
 > Albumin cleaning rule (from previous spec): **Albumin < 2 or > 5 → NA**.
 
@@ -92,8 +92,3 @@ Values outside these ranges are set to NA. Additionally, **≤ 0** is set to NA 
 - Apply the fixed ranges table above.
 - Also set **≤ 0 → NA** for Creatinine, Potassium, Hemoglobin.
 - **Selection**
-- Per `patientunitstayid`, keep the **earliest valid** record (smallest `labresultoffset`).
-- **Output schema (13 columns)**
-
-  - Per `SUBJECT_ID`, keep the **earliest valid** record (smallest `CHARTTIME`).
-- **Output schema (13 columns)**
