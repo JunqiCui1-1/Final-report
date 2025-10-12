@@ -50,17 +50,3 @@ At completion, the script prints a **unique-ID-level** coverage dictionary:
 - Observation flags (`_obs`) let models reason explicitly about missingness.
 
 ---
-
-## Quick Start
-
-1. Place the base file and the five lab files under `/content/`.
-2. Run the script for your pipeline.
-3. Find the output wide panel at the path listed in the pipeline’s **Output** above.
-
----
-
-## Customize
-
-- **Window / bin size**: edit `ABS_START_H = 8`, `ABS_END_H = 30*24`, `BIN_H = 2`.
-- **Add variables**: extend `VAR_FILES` with `"NewVar": "/content/newvar.csv"`.
-- **Keep sign information**: produce an auxiliary signed-time feature/channel if required by the model.
