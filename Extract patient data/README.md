@@ -34,9 +34,3 @@ By default, the script processes these files:
 Many clinical/EHR files are huge. Reading in chunks avoids out-of-memory errors and keeps the workflow stable and reproducible.
 
 ---
-
-## Quick start
-
-1. Ensure Python 3.9+ and `pandas` are available:
-   ```bash
-   pip install -U pandas
