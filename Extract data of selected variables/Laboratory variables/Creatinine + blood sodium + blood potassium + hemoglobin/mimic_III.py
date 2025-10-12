@@ -1,50 +1,21 @@
+# -*- coding: utf-8 -*-
 """
-Purpose
--------
-Extract four lab analytes (Creatinine, Sodium, Potassium, Hemoglobin) from a single
-LABEVENTS table and produce a wide, subject-level table with exactly 13 columns:
-    SUBJECT_ID,
-    Creatinine, Creatinine_valueuom, Creatinine_charttime,
-    Sodium,     Sodium_valueuom,     Sodium_charttime,
-    Potassium,  Potassium_valueuom,  Potassium_charttime,
-    Hemoglobin, Hemoglobin_valueuom, Hemoglobin_charttime
-
-Rules (same ranges and logic as previously agreed)
---------------------------------------------------
-1) Use one ItemID per analyte (most frequent blood items):
-      - Creatinine: itemid=50912  (mg/dL)
-      - Sodium:     itemid=50983  (mmol/L or mEq/L, 1:1 numerically)
-      - Potassium:  itemid=50971  (mmol/L or mEq/L, 1:1 numerically)
-      - Hemoglobin: itemid=51222  (g/dL)
-2) Keep only allowed units:
-      - Creatinine: mg/dL
-      - Sodium:     mmol/L or mEq/L (treated equivalently; output normalized to "mmol/L")
-      - Potassium:  mmol/L or mEq/L (treated equivalently; output normalized to "mmol/L")
-      - Hemoglobin: g/dL
-3) Clean to NA using fixed valid ranges:
-      - Creatinine (mg/dL): 0.1–20.0
-      - Sodium (mmol/L):    110–170
-      - Potassium (mmol/L): 1.5–8.0
-      - Hemoglobin (g/dL):  3–22
-   Additionally, for Creatinine/Hemoglobin/Potassium, values ≤0 are set to NA.
-4) For each analyte, select the earliest valid measurement per SUBJECT_ID.
-5) Save the 13-column wide table to CSV at the end.
-
-Input
------
-/content/filtered_by_ids/LABEVENTS.csv
-(required columns: SUBJECT_ID, ITEMID, VALUENUM, VALUEUOM, CHARTTIME; any case is accepted)
-
-Output
-------
-/content/labs_cleaned_4vars_13cols.csv
+MIMIC-IV LABEVENTS → four long tables (no collapsing)
+Each CSV has 4 columns:
+  SUBJECT_ID, <Analyte>, <Analyte>_valueuom, <Analyte>_charttime
+Analytes: Creatinine(50912), Sodium(50983), Potassium(50971), Hemoglobin(51222)
+Units kept/normalized and ranges cleaned as agreed.
 """
 
 import pandas as pd
 import numpy as np
 
-PATH_IN  = "/content/filtered_by_ids/LABEVENTS.csv"
-PATH_OUT = "/content/labs_cleaned_4vars_13cols.csv"
+PATH_IN = "/content/LABEVENTS.csv"
+
+OUT_CRE = "/content/creatinine_long_4cols.csv"
+OUT_NA  = "/content/sodium_long_4cols.csv"
+OUT_K   = "/content/potassium_long_4cols.csv"
+OUT_HGB = "/content/hemoglobin_long_4cols.csv"
 
 ITEMIDS = {
     "Creatinine": 50912,   # mg/dL
@@ -55,8 +26,8 @@ ITEMIDS = {
 
 UNIT_ALLOW = {
     "Creatinine": {"mg/dl"},
-    "Sodium":     {"mmol/l", "meq/l"},
-    "Potassium":  {"mmol/l", "meq/l"},
+    "Sodium":     {"mmol/l", "meq/l"},   # treated 1:1; output "mmol/L"
+    "Potassium":  {"mmol/l", "meq/l"},   # treated 1:1; output "mmol/L"
     "Hemoglobin": {"g/dl"},
 }
 
@@ -74,9 +45,8 @@ OUT_UNIT = {
     "Hemoglobin": "g/dL",
 }
 
+# -------- Load --------
 df = pd.read_csv(PATH_IN, low_memory=False)
-
-# Make column access case-insensitive
 df.columns = [c.lower() for c in df.columns]
 
 def pick(df, name):
@@ -91,76 +61,57 @@ col_value    = pick(df, "valuenum")
 col_valueuom = pick(df, "valueuom")
 col_time     = pick(df, "charttime")
 
-# Basic typing and normalization
+# Basic typing / normalization
 df[col_value] = pd.to_numeric(df[col_value], errors="coerce")
 df[col_time]  = pd.to_datetime(df[col_time], errors="coerce")
 df[col_valueuom] = df[col_valueuom].astype(str).str.strip().str.lower()
 
-def extract_one(df, analyte, out_value_col, out_unit_col, out_time_col):
-    """
-    Filter to one itemid, allowed units, clean to NA by fixed ranges,
-    and keep the earliest valid measurement per SUBJECT_ID.
-    """
+def extract_long(analyte: str, out_csv_path: str):
     iid = ITEMIDS[analyte]
-    allowed = UNIT_ALLOW[analyte]
+    allowed = {u.lower() for u in UNIT_ALLOW[analyte]}
     lo, hi = RANGE[analyte]
+    out_unit_canonical = OUT_UNIT[analyte]
 
     d = df.loc[df[col_itemid] == iid, [col_subj, col_time, col_value, col_valueuom]].copy()
+    # keep only allowed units
     d = d[d[col_valueuom].isin(allowed)]
 
-    # Normalize equivalent units for Na/K to mmol/L (display)
+    # Normalize Na/K unit label to mmol/L (values unchanged, mEq/L==mmol/L)
     if analyte in ("Sodium", "Potassium"):
-        d.loc[d[col_valueuom].isin({"mmol/l", "meq/l"}), col_valueuom] = "mmol/l"
+        d.loc[:, col_valueuom] = "mmol/l"
 
-    # Additional non-positive to NA where appropriate
+    # Clean non-positive to NA where appropriate
     if analyte in ("Creatinine", "Hemoglobin", "Potassium"):
         d.loc[d[col_value] <= 0, col_value] = np.nan
 
-    # Range clean to NA
+    # Fixed-range clean
     d.loc[(d[col_value] < lo) | (d[col_value] > hi), col_value] = np.nan
 
-    # Keep rows with both value and time
+    # Drop rows lacking value or time
     d = d.dropna(subset=[col_value, col_time])
 
-    # Earliest per SUBJECT_ID
-    d = d.sort_values([col_subj, col_time]).groupby(col_subj, as_index=False).first()
+    # Sort but DO NOT collapse — keep all rows per subject
+    d = d.sort_values([col_subj, col_time])
 
-    # Rename for output
+    # Rename to analyte-specific columns and set canonical unit case
+    out_val  = analyte
+    out_unit = f"{analyte}_valueuom"
+    out_time = f"{analyte}_charttime"
+
     d = d.rename(columns={
-        col_value: out_value_col,
-        col_valueuom: out_unit_col,
-        col_time: out_time_col
+        col_subj:     "SUBJECT_ID",
+        col_value:    out_val,
+        col_valueuom: out_unit,
+        col_time:     out_time
     })
+    d[out_unit] = out_unit_canonical
 
-    # Normalize unit label case for output
-    d[out_unit_col] = OUT_UNIT[analyte]
+    d = d[["SUBJECT_ID", out_val, out_unit, out_time]]
+    d.to_csv(out_csv_path, index=False)
+    print(f"{analyte}: saved {out_csv_path}, shape={d.shape}")
 
-    return d[[col_subj, out_value_col, out_unit_col, out_time_col]]
-
-cr  = extract_one(df, "Creatinine", "Creatinine", "Creatinine_valueuom", "Creatinine_charttime")
-na_ = extract_one(df, "Sodium",     "Sodium",     "Sodium_valueuom",     "Sodium_charttime")
-k_  = extract_one(df, "Potassium",  "Potassium",  "Potassium_valueuom",  "Potassium_charttime")
-hgb = extract_one(df, "Hemoglobin", "Hemoglobin", "Hemoglobin_valueuom", "Hemoglobin_charttime")
-
-out = (
-    cr.merge(na_,  how="outer", on=col_subj)
-      .merge(k_,   how="outer", on=col_subj)
-      .merge(hgb,  how="outer", on=col_subj)
-)
-
-# Ensure SUBJECT_ID is uppercase in the final output, and order columns explicitly
-out = out.rename(columns={col_subj: "SUBJECT_ID"})
-cols = [
-    "SUBJECT_ID",
-    "Creatinine", "Creatinine_valueuom", "Creatinine_charttime",
-    "Sodium",     "Sodium_valueuom",     "Sodium_charttime",
-    "Potassium",  "Potassium_valueuom",  "Potassium_charttime",
-    "Hemoglobin", "Hemoglobin_valueuom", "Hemoglobin_charttime",
-]
-out = out.reindex(columns=cols)
-
-out.to_csv(PATH_OUT, index=False)
-
-print(f"Saved: {PATH_OUT}")
-print(f"Shape: {out.shape}")
-print(out.head(10))
+# ---- Run for each analyte ----
+extract_long("Creatinine", OUT_CRE)
+extract_long("Sodium",     OUT_NA)
+extract_long("Potassium",  OUT_K)
+extract_long("Hemoglobin", OUT_HGB)
