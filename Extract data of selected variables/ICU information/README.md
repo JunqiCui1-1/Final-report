@@ -43,11 +43,3 @@ Apply in order (first match wins; case-insensitive, trim spaces):
   - `patient_mimic_III.csv` → columns: `patientunitstayid`, `ICUtype`, `LOS` (where `LOS = unitdischargeoffset / 1440` days)
 
 ---
-
-## Usage Tips
-
-- **Pick one global stance** for *Cardiac ICU* (→ `CCU` or → `CSRU`) and keep it **consistent** for model training/evaluation.
-- **Keep NA rows** during preprocessing to allow later clinical review or cohort-specific decisions.
-- Extend the rules with site-specific aliases if new labels appear; unmatched labels should remain **NA** until reviewed.
-
----
