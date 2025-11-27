@@ -78,13 +78,15 @@ All notebooks are Jupyter `.ipynb` files and were developed in **Google Colab**.
    - Edit input/output paths if necessary  
    - Run all cells to generate `Q2_cohort.csv`  
 
-2. **Run `Q2_Descriptive_statistical_analysis.ipynb`** (R)  
+2. **Run `Q2_Classification_task.ipynb`** (Python)  
+   - Load `Q2_cohort.csv`
+   - Run all cells to fit the models and produce classification results  
+
+3. **Run `Q2_Descriptive_statistical_analysis.ipynb`** (R)  
    - Load `Q2_cohort.csv`  
    - Run all cells to obtain descriptive statistics tables  
 
-3. **Run `Q2_Classification_task.ipynb`** (Python)  
-   - Load `Q2_cohort.csv` (and any feature files if specified)  
-   - Run all cells to fit the models and produce classification results  
+
 
 ---
 
